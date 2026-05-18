@@ -44,6 +44,8 @@ function App() {
 
   async function crearUsuario() {
 
+    const token = localStorage.getItem("token");
+
     await fetch(
       "https://developmentfull-backend-api.onrender.com/usuarios",
       {
@@ -51,7 +53,8 @@ function App() {
         method: "POST",
 
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          Authorization: token
         },
 
         body: JSON.stringify({
@@ -74,10 +77,16 @@ function App() {
 
   async function eliminarUsuario(id) {
 
+    const token = localStorage.getItem("token");
+
     await fetch(
       "https://developmentfull-backend-api.onrender.com/usuarios/" + id,
       {
-        method: "DELETE"
+        method: "DELETE",
+
+        headers:{
+          Authorization: token
+        }
       }
     );
 
@@ -103,6 +112,8 @@ function App() {
 
   async function guardarCambios() {
 
+    const token = localStorage.getItem("token");
+
     await fetch(
       "https://developmentfull-backend-api.onrender.com/usuarios/" + editandoId,
       {
@@ -110,7 +121,8 @@ function App() {
         method: "PUT",
 
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
+          Authorization: token
         },
 
         body: JSON.stringify({
