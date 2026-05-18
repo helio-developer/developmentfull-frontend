@@ -1,0 +1,65 @@
+body{
+  background:#f4f6f9;
+  font-family:Arial;
+  margin:0;
+  padding:40px;
+}
+
+.container{
+  max-width:700px;
+  margin:auto;
+}
+
+.titulo{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.formulario{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+  margin-bottom:30px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  font-size:16px;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:15px;
+  margin-right:10px;
+}
+
+.crear{
+  background:#2563eb;
+  color:white;
+}
+
+.editar{
+  background:#f59e0b;
+  color:white;
+}
+
+.eliminar{
+  background:#dc2626;
+  color:white;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
