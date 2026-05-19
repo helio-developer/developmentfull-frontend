@@ -52,7 +52,7 @@ function Dashboard() {
   
     obtenerUsuarios();
   
-  }, []);
+  }, [navigate]);
 
 
 
